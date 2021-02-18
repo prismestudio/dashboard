@@ -661,6 +661,8 @@
         font-weight: 500;
         color: #fff;
         text-transform: uppercase; }
+  .social-box.dafont header{
+    background: #F7F7F7; }
   .social-box.discord header{
     background: #23272A; }
   .social-box.epic header{
@@ -673,8 +675,14 @@
     background: #F7F7F7; }
   .social-box.gmail header{
     background: #F7F7F7; }
+  .social-box.gdrive header{
+    background: #F7F7F7; }
+  .social-box.gforms header{
+    background: #F7F7F7; }
   .social-box.gsearchconsole header{
     background: #505553; }
+  .social-box.mixamo header{
+    background: #F7F7F7; }
   .social-box.steam i {
     color: #fff;
     background: #000; }
