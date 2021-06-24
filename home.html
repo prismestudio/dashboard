@@ -9,26 +9,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PRISME Studio - Discord</title>
-    <meta name="description" content="Discord Application">
+    <title>PRISME Studio - Dashboard</title>
+    <meta name="description" content="Outil interne de PRISME Studio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#222222">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#222222">
     <meta name="msapplication-TileColor" content="#222222">
     <meta name="theme-color" content="#222222">
-
-    <link rel="stylesheet" href="../vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../vendors/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="../vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../vendors/selectFX/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="../vendors/jqvmap/dist/jqvmap.min.css">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -46,17 +46,17 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="../images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="../images/logo2.png" alt="Logo" height="50"></a>
+                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo" height="50"></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../home.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
-                    </li>
                     <li class="active">
-                        <a href="../app.html"> <i class="menu-icon fa fa-tasks"></i>Applications </a>
+                        <a href="home.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <li>
+                        <a href="app.html"> <i class="menu-icon fa fa-tasks"></i>Applications </a>
                     </li>
                     
                     <h3 class="menu-title">Liens</h3><!-- /.menu-title -->
@@ -172,7 +172,7 @@
 
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
-                            <img class="user-avatar rounded-circle" src="../images/admin.PNG" alt="User Avatar">
+                            <img class="user-avatar rounded-circle" src="images/admin.PNG" alt="User Avatar">
 
                         <!--<div class="user-menu dropdown-menu">
                             <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
@@ -188,16 +188,18 @@
                     <div class="language-select dropdown" id="language-select">
                             <i class="flag-icon flag-icon-fr"></i>
                     </div>
+
                 </div>
             </div>
 
-        </header>
+        </header><!-- /header -->
+        <!-- Header-->
 
         <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1><a href="../app.html">Applications</a> > Trello</h1>
+                        <h1>Dashboard</h1>
                     </div>
                 </div>
             </div>
@@ -213,6 +215,15 @@
         </div>
 
         <div class="content mt-3">
+
+            <div class="col-sm-12">
+                <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                    <span class="badge badge-pill badge-success">Attention</span> Ceci est un outil pour les équipes de PRISME Studio, ne partagez surtout pas le lien.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
 
             <!--<div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-3">
@@ -242,18 +253,7 @@
                 </div>
             </div>
             <!--/.col-->
-            <div class="col-lg-2 col-md-6">
-                <a href="https://trello.com/fr" target="_blank"><div class="social-box trello">
-                    <i class="fa fa-trello"></i>
-                    <p>Trello App</p>
-                    </div></a>
-            </div>
-            <div class="col-xl-5 col-lg-7">
-                <iframe src="https://trello.com/b/s3WENqxG.html" height="700px" width="670px"></iframe>
-            </div>
-            <div class="col-xl-5 col-lg-7">
-                <iframe src="https://trello.com/b/1Ww01Kag.html" height="700px" width="670px"></iframe>
-            </div>
+
             <!--/.col-->
 
             <!--<div class="col-xl-6">
@@ -327,6 +327,39 @@
                             </li>
                         </ul>
                     </div>-->
+                </div>
+
+
+            <div class="col-xl-3 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Dashboard PRISME Studio</h1><br/>
+                        <p>Bienvenue sur le Dashboard de PRISME Studio !</p><br/>
+                        <h5>C'est quoi?</h5><br/>
+                        <p>C'est un outil interne qui regroupe tout les différents outils que nous utilisons, aussi bien pour la réalisation de nos jeux, que pour le marcketing, ou encore la communication !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Guide</h1><br/>
+                        <h3>Menu de navigation</h3><br/>
+                        <p>C'est le panneau latéral gauche il vous permet d'accéder aux différentes catégories comme...</p><br/>
+                        <h5>Applications</h5><br/>
+                        <p>Retrouvez toutes les différentes applications utilisées sur internet par PRISME Studio, comme Trello, Github, Gmail, ...</p>
+                        <h5>Liens</h5><br/>
+                        <p>Les liens utiles de nos différents réseaux sociaux et site web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+                <div class="card">
+                        <a class="twitter-timeline" data-lang="fr" data-width="550" data-height="750" data-theme="dark" href="https://twitter.com/PRISMEstudio_?ref_src=twsrc%5Etfw">Tweets by PRISMEstudio_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+           
+
 
             <!--<div class="col-xl-3 col-lg-6">
                 <div class="card">
@@ -347,17 +380,17 @@
     </div>
 
     <!-- Script -->
-    <script src="../assets/js/SW.js"></script>
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <script src="../vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../vendors/chart.js/dist/Chart.bundle.min.js"></script>
-    <script src="../assets/js/dashboard.js"></script>
-    <script src="../assets/js/widgets.js"></script>
-    <script src="../vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="assets/js/SW.js"></script>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
     <script>
         (function($) {
             "use strict";
